@@ -3,136 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhranil Das - Software Engineer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Using Google Fonts for 'Inter' -->
+    <title>Abhranil Das - Software Engineer Portfolio (Updated)</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Fonts for 'Inter' -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS (for minor overrides or unique styles not covered by Bootstrap) -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header-section text-center">
         <div class="container">
-            <!-- Placeholder for the profile picture.
-                 Please replace 'https://placehold.co/150x150/EEEEEE/333333?text=Profile' with the actual image URL or path. -->
-            <img src="IMG-20231216-WA0000.jpg" alt="Abhranil Das Profile Picture" class="profile-pic">
-            <h1>ABHRANIL DAS</h1>
-            <p class="tagline">SOFTWARE ENGINEER</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#internship">Internship</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <img src="IMG-20231216-WA0000.jpg" alt="Abhranil Das Profile Picture" class="img-fluid rounded-circle profile-pic">
+            <h1 class="display-4 fw-bold">ABHRANIL DAS</h1>
+            <p class="lead mb-4 text-light">SOFTWARE ENGINEER</p>
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 px-md-4" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 px-md-4" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 px-md-4" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 px-md-4" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 px-md-4" href="#certifications">Certifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 px-md-4" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section id="about" class="container card">
-            <h2>ABOUT ME</h2>
-            <p>As a driven B. Tech graduate specializing in Electrical and Electronics Engineering, I possess a robust foundation in key programming languages, including JavaScript, Python, HTML5, and CSS. My enthusiasm lies in applying these technical skills to the role of a software engineer, where I can thrive in a dynamic setting. I bring a proactive approach and a keen ability to adapt, making me a valuable asset to any forward-thinking team.</p>
-            <div class="details-grid">
-                <p><strong>Date of birth:</strong> 15/10/2000</p>
-                <p><strong>Nationality:</strong> Indian</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abhranil-das-028a74270/" target="_blank">linkedin.com/in/abhranil-das-028a74270/</a></p>
+    <main class="container py-5">
+        <section id="about" class="card p-4 p-md-5">
+            <h2 class="text-center section-title mb-4">ABOUT ME</h2>
+            <p class="lead text-justify">As a driven B. Tech graduate specializing in Electrical and Electronics Engineering, I possess a robust foundation in key programming languages, including JavaScript, Python, HTML5, and CSS. My enthusiasm lies in applying these technical skills to the role of a software engineer, where I can thrive in a dynamic setting. I bring a proactive approach and a keen ability to adapt, making me a valuable asset to any forward-thinking team.</p>
+            <div class="row mt-4 contact-info">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="fw-bold mb-0">Date of birth:</p>
+                    <p>15/10/2000</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="fw-bold mb-0">Nationality:</p>
+                    <p>Indian</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="fw-bold mb-0">LinkedIn:</p>
+                    <p><a href="https://www.linkedin.com/in/abhranil-das-wb42ay7567" target="_blank">linkedin.com/in/abhranil-das-wb42ay7567</a></p>
+                </div>
             </div>
         </section>
 
-        <section id="education" class="container card">
-            <h2>EDUCATION</h2>
-            <div class="education-item">
-                <h3>Bachelor of Technology</h3>
-                <p>Institute of Engineering & Management, Kolkata | Kolkata | 2024</p>
-                <p>Electrical & Electronics Engineering</p>
-                <p>GPA: 9.03/10</p>
-            </div>
-            <div class="education-item">
-                <h3>Class XII</h3>
-                <p>Burdwan Municipal High School | Burdwan | 2019</p>
-                <p>Percentage: 88.33%</p>
-            </div>
-            <div class="education-item">
-                <h3>Class X</h3>
-                <p>Burdwan Municipal High School | Burdwan | 2017</p>
-                <p>Percentage: 90.71%</p>
-            </div>
-        </section>
-
-        <section id="skills" class="container card">
-            <h2>SKILLS</h2>
-            <div class="skills-list">
-                <span>Python</span>
-                <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>React.js</span>
-                <span>SQL</span>
-                <span>Git</span>
-                <span>Bootstrap</span>
-                <span>C programming</span>
-                <span>Object-Oriented Programming</span>
-            </div>
-            <h2>LANGUAGES</h2>
-            <div class="languages-list">
-                <span>English</span>
-                <span>Hindi</span>
-                <span>Bengali</span>
+        <section id="education" class="card p-4 p-md-5">
+            <h2 class="text-center section-title mb-4">EDUCATION</h2>
+            <div class="list-group">
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Bachelor of Technology</h3>
+                    <p class="mb-1 text-muted">Institute of Engineering and Management | Kolkata | Sep 2020 - June 2024</p>
+                    <small>Electrical and Electronics Engineering</small><br>
+                    <small>GPA: 9.04</small>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Science Higher Secondary</h3>
+                    <p class="mb-1 text-muted">Burdwan Municipal High School | Burdwan | May 2017 - May 2019</p>
+                    <small>Percentage: 88.33%</small>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">General Secondary</h3>
+                    <p class="mb-1 text-muted">Burdwan Municipal High School | Burdwan | Mar 2017</p>
+                    <small>Percentage: 90.71%</small>
+                </div>
             </div>
         </section>
 
-        <section id="courses" class="container card">
-            <h2>COURSES</h2>
-            <div class="course-item">
-                <h3>Programming for Everybody (Getting Started with Python)</h3>
-                <p>University of Michigan | Sep 2024</p>
+        <section id="skills" class="card p-4 p-md-5 text-center">
+            <h2 class="section-title mb-4">SKILLS</h2>
+            <h3 class="h6 text-muted mb-2">Programming Languages:</h3>
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">C language</span>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">Bootstrap</span>
+                <!-- Kept as it's a core concept -->
             </div>
-            <div class="course-item">
-                <h3>Introduction to Web Development with HTML, CSS, and JavaScript</h3>
-                <p>Coursera | Nov 2024</p>
+            <h3 class="h6 text-muted mb-2">Tools & Platforms:</h3>
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">VS Code</span>
+                <span class="skill-badge">Matlab</span>
+                <span class="skill-badge">Arduino IDE</span>
             </div>
-            <div class="course-item">
-                <h3>Programming with JavaScript</h3>
-                <p>Meta | Apr 2025</p>
+            <h3 class="h6 text-muted mb-2">Databases:</h3>
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">SQL</span>
             </div>
-            <div class="course-item">
-                <h3>Version Control</h3>
-                <p>Meta | May 2025</p>
-            </div>
-            <div class="course-item">
-                <h3>Python Data Structures</h3>
-                <p>University of Michigan | Jun 2025</p>
-            </div>
-            <div class="course-item">
-                <h3>An Introduction to Programming the Internet of Things (IOT) Specialization</h3>
-                <p>University of California, Irvine Division of Continuing Education Coursera | Apr 2023</p>
-            </div>
-        </section>
-
-        <section id="internship" class="container card">
-            <h2>INTERNSHIP</h2>
-            <div class="internship-item">
-                <h3>Internship on Embedded Systems with IoT (ESP32)</h3>
-                <p>Technotran Company, (AICTE) | May 2024-Jul 2024</p>
-                <p>8-week Virtual Internship Certification Program at Technotran Company on Embedded Systems with IoT (ESP32).</p>
+            <h2 class="section-title mb-4">LANGUAGES</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+                <span class="language-badge">English</span>
+                <span class="language-badge">Hindi</span>
+                <span class="language-badge">Bengali</span>
             </div>
         </section>
 
-        <section id="contact" class="container card">
-            <h2>CONTACT</h2>
-            <p><strong>Email:</strong> <a href="mailto:9abhranil@gmail.com">9abhranil@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+918167275474">8167275474</a></p>
-            <p><strong>Address:</strong> Udayan, Kalna Gate, Burdwan, 713101, India</p>
+        <section id="projects" class="card p-4 p-md-5">
+            <h2 class="text-center section-title mb-4">PROJECTS</h2>
+            <div class="list-group">
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">A Portfolio Website</h3>
+                    <p class="mb-1 text-muted">HTML, CSS, JavaScript</p>
+                    <small>A portfolio website is a digital resume that showcases the skills, creativity, and accomplishments that define an individual.</small>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Homepage for Restaurant</h3>
+                    <p class="mb-1 text-muted">HTML, CSS, Bootstrap</p>
+                    <small>Designed and developed a responsive homepage for a restaurant using HTML, CSS, and Bootstrap. Bootstrap's grid system and components ensure a mobile-friendly design and a smooth user experience.</small>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Solar Inverter</h3>
+                    <p class="mb-1 text-muted">Power Electronics, Transformer, MOSFET</p>
+                    <small>A device that converts DC to AC directly with the help of solar power. It stores the solar power using solar panels in a rechargeable battery and then converts it into AC.</small>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Automatic Exhaust System with Alarm</h3>
+                    <p class="mb-1 text-muted">Arduino IDE, Sensors</p>
+                    <small>Detect smoke or fire, automatically set an alarm, and switch on the exhaust fan. It uses an Arduino as the main controller of the circuit.</small>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="card p-4 p-md-5">
+            <h2 class="text-center section-title mb-4">CERTIFICATIONS</h2>
+            <div class="list-group">
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">SQL Foundations</h3>
+                    <p class="mb-1 text-muted">Microsoft</p>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Version Control</h3>
+                    <p class="mb-1 text-muted">Meta</p>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Programming with JavaScript</h3>
+                    <p class="mb-1 text-muted">Meta</p>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Introduction to Web Development with HTML, CSS, JavaScript</h3>
+                    <p class="mb-1 text-muted">Coursera</p>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Python Data Structures</h3>
+                    <p class="mb-1 text-muted">University of Michigan</p>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">Programming for Everybody (Getting Started with Python)</h3>
+                    <p class="mb-1 text-muted">University of Michigan</p>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">learn python: the complete python programming course</h3>
+                    <p class="mb-1 text-muted">Udemy</p>
+                </div>
+                <div class="list-group-item list-group-item-action">
+                    <h3 class="h5 mb-1">An Introduction to Programming the Internet of Things (IOT) Specialization</h3>
+                    <p class="mb-1 text-muted">University of California, Irvine Division of Continuing Education | Coursera</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="card p-4 p-md-5 text-center">
+            <h2 class="section-title mb-4">CONTACT</h2>
+            <div class="contact-info">
+                <p class="mb-2"><strong class="me-2">Email:</strong> <a href="mailto:9abhranil@gmail.com">9abhranil@gmail.com</a></p>
+                <p class="mb-2"><strong class="me-2">Phone:</strong> <a href="tel:+918167275474">8167275474</a></p>
+                <p class="mb-0"><strong class="me-2">Address:</strong> Udayan, Kalna Gate, Burdwan</p>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="text-center py-4">
         <div class="container">
-            <p>&copy; 2025 Abhranil Das. All rights reserved.</p>
+            <p class="mb-0">&copy; 2025 Abhranil Das. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
