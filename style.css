@@ -88,3 +88,26 @@
         .nav-link.active, .nav-link:hover {
             color: #e0f7fa !important; /* Lighter cyan for nav hover */
         }
+
+        .certification-link { /* Only for certification links now */
+            font-size: 0.9em;
+            margin-top: 5px;
+            display: block; /* Ensures link is on its own line */
+            text-decoration: none; 
+        }
+
+        .certification-link:hover {
+            font-weight: 600;
+            font-size: 1em;
+        }
+        .project-link {
+            font-size: 0.9em;
+            margin-top: 5px;
+            display: block; /* Ensures link is on its own line */
+            text-decoration: none; 
+        }
+
+        .project-link:hover {
+            font-weight: 600;
+            font-size: 1em;
+        }
